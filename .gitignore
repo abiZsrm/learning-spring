@@ -1,0 +1,12 @@
+# Subdirectories to ignore. 
+/.metadata/
+/experiment-jms/.settings/
+/learning-spring/.gradle/
+/learning-spring/.settings/
+/learning-spring/bin/
+
+# Files to ignore. 
+/experiment-jms/.project
+/experiment-jms/.classpath
+/learning-spring/.classpath
+/learning-spring/.project
