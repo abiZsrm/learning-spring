@@ -1,5 +1,6 @@
 package experiment.jms;
 
+import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageListener;
 
@@ -10,12 +11,13 @@ public class UserReceiver implements MessageListener
 {
    @Autowired
    private MessageConverter messageConverter;
+
    
    @Override
    public void onMessage(Message message)
    {
-      // TODO Auto-generated method stub
-      
+         String receivedUser = (String)messageConverter.fromMessage((org.springframework.messaging.Message<?>) message, this.getClass());
+         System.out.println( ">> Received user: " + receivedUser);
    }
 
 }

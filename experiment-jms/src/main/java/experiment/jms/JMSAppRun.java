@@ -9,5 +9,12 @@ public class JMSAppRun
    public static void main(String[] args)
    {
       SpringApplication.run(JMSAppRun.class, args);
+      
+      System.out.println("Sending message.." );
+      UserSender sender = new UserSender(); 
+      
+      String message = "Message sent - 1"; 
+      sender.sendMessage(message);
+      
    }
 }

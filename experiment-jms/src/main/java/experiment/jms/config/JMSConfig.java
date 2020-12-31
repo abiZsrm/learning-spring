@@ -51,12 +51,6 @@ public class JMSConfig
    }
 
    @Bean
-   public ActiveMQQueue confirmationQueue()
-   {
-      return new ActiveMQQueue(m_activeMQConfirmation);
-   }
-
-   @Bean
    public JmsTemplate jmsTemplate()
    {
       JmsTemplate jmsTemplate = new JmsTemplate();
@@ -75,6 +69,12 @@ public class JMSConfig
    @Bean
    public Queue userQueue(){
    return new ActiveMQQueue("queues.users");
+   }
+   
+   @Bean
+   public Queue confirmationQueue()
+   {
+      return new ActiveMQQueue("queue.confirmationQueue"); 
    }
    
    @Bean
