@@ -1,0 +1,3 @@
+Note: Both the producer and consumer are configured to utilize the same queue. 
+1. Run the consumer-app first to wait for the messages to be posted from the producer-app (StudentProducerApp).  
+2. Run the producer-app to post the messages to the consumer-app (StudentConsumerApp). 
