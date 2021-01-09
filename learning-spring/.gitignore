@@ -1,2 +1,7 @@
+# Folders to ignore
 /bin/
 /.gradle/
+
+#Files to ignore. 
+/.project
+/.classpath

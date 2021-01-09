@@ -1,1 +1,9 @@
-/target/
+#Directories to ignore. 
+bin/
+target/
+.settings/
+
+#Files to ignore. 
+.project
+.classpath
+
