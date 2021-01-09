@@ -1,0 +1,20 @@
+#Folders to ignore. 
+.gradle/
+.settings/
+bin/
+build/
+gradle/
+
+#Files to ignore. 
+.classpath
+.project
+gradlew
+gradlew.bat
+
+#Other files as indicated by Spring Initializer while bootstrapping. 
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
